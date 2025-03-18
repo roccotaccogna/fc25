@@ -1,0 +1,33 @@
+[
+    {
+        "id": 11,
+        "title": "Contrattura",
+        "description": "Il giocatore estratto salterà la prossima partita"
+    },
+    {
+        "id": 2,
+        "title": "Raccomandato",
+        "description": "Schiera titolare il peggior giocatore in rosa per 90 minuti"
+    },
+    {
+        "id": 3,
+        "title": "Veterano",
+        "description": "Schiera titolare il più vecchio in rosa"
+    },
+    {
+        "id": 4,
+        "title": "Giovane Promessa",
+        "description": "Schiera titolare il giocatore più giovane in prima squadra"
+    },
+    {
+        "id": 12,
+        "title": "Turnover",
+        "description": "La squadra è stanca. Sorteggia 3 giocatori tra i titolari. Saranno gli unici a giocare questa partita."
+    },
+    {
+        "id": 21,
+        "title": "Nessun imprevisto",
+        "description": ""
+    }
+
+]

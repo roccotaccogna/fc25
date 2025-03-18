@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+:root {
+  background-color: #1b3a4b;
+  color: white;
+  font-family: "Nunito", sans-serif;
+}

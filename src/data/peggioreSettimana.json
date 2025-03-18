@@ -1,0 +1,37 @@
+[
+    {
+        "id": 1,
+        "title": "Highlander",
+        "description": "Il giocatore confessa al presidente il suo odio per il miglior pari ruolo in rosa scatenando così una faida: il giocatore con il voto complessivo più basso a fine stagione sarà ceduto."
+    },
+    {
+        "id": 2,
+        "title": "Adeguamento",
+        "description": "Tramite il suo agente il giocatore fa giungere una richiesta di adeguamento del contratto per raggiungere il più pagato della rosa. Che fai? Accetti o lo cacci?"
+    },
+    {
+        "id": 3,
+        "title": "Iettatore",
+        "description": "Il giocatore in oggetto causa un infortunio al miglior giocatore della tua rosa, che resta fuori per 3 partite."
+    },
+    {
+        "id": 4,
+        "title": "Certificato dalle Maldive",
+        "description": "Il giocatore resterà fuori rosa per tutto il mese."
+    },
+    {
+        "id": 5,
+        "title": "Sempre Presente",
+        "description": "Il giocatore dovrà disputare tutte le partite per tutto il mese."
+    },
+    {
+        "id": 6,
+        "title": "Hola",
+        "description": "Acquista tra gli svincolati un connazionale a scelta e schierali insieme per 3 partite."
+    },
+    {
+        "id": 21,
+        "title": "Nessun Imprevisto",
+        "description": "Il giocatore sarà scarsamente considerato, in questa settimana."
+    }
+]
