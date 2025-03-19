@@ -26,9 +26,9 @@ function Mercato() {
 
       // Se non trova il dato, nostra l'id 21
       const fallbackData = mercato.find(item => item.id === 21);
-
-      setMercatoData(foundData || fallbackData);   
-  }
+      
+      setMercatoData(foundData || fallbackData);  
+    }
 
   const aggiungiTesto = () => {
     if(inputTesto !== "") {
@@ -109,7 +109,7 @@ function Mercato() {
                           <li 
                             key={index}
                             className="block mt-1 text-lg leading-tight font-medium text-white"
-                          > {testo} </li>
+                          > {testo}</li>
                           <button
                             onClick={() => handleDelete(testo)}
                             className="ml-4 cursor-pointer text-red-600 hover:text-red-500"

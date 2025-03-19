@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import logo from "../images/logo.png";
 
 import { GiSoccerKick } from "react-icons/gi";
 import { GiSoccerField } from "react-icons/gi";
@@ -6,13 +7,19 @@ import { IoIosTrendingDown } from "react-icons/io";
 import { CgAirplane } from "react-icons/cg";
 import { MdOutlineEuroSymbol } from "react-icons/md";
 import { CgAlignBottom } from "react-icons/cg";
+import { PiListPlusBold } from "react-icons/pi";
 
 function Homepage() {
   return (
         <div>
-          <h1 className="text-2xl text-center mt-16 italic">
-            FC 25
-          </h1>
+          {/* LOGO */}
+          <div className="flex justify-center mt-20">
+            <img 
+              src={logo} 
+              alt=""
+              className="w-72" 
+            />
+          </div>
     
           <div className="mt-8 gap-12 grid grid-cols-3">
             <div 
@@ -95,6 +102,20 @@ function Homepage() {
                 <CgAlignBottom size={52} className="mb-2"/>
                 <button>
                   Saldo Punti
+                </button>
+              </div> 
+             </Link>  
+            </div>
+
+            <div 
+              className="border-1 rounded-xl p-4 cursor-pointer 
+                         mr-4 ml-4 bg-teal-900 hover:bg-teal-800"
+            >   
+             <Link to="/bonus">      
+              <div className="flex flex-col items-center justify-center h-32">
+                <PiListPlusBold size={52} className="mb-2"/>
+                <button>
+                  Bonus
                 </button>
               </div> 
              </Link>  

@@ -6,6 +6,7 @@ import SerieNegativa from "./pages/SerieNegativa";
 import Ingaggio from "./pages/Ingaggio";
 import Mercato from "./pages/Mercato";
 import SaldoPunti from "./pages/SaldoPunti";
+import Bonus from './pages/Bonus';
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
         <Route path="/ingaggio" element={<Ingaggio />} />
         <Route path="/mercato" element={<Mercato />} />
         <Route path="/saldopunti" element={<SaldoPunti />} />
+        <Route path="/bonus" element={<Bonus />} />
       </Routes>
     </Router>
   )

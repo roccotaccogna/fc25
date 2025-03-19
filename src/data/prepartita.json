@@ -25,6 +25,11 @@
         "description": "La squadra è stanca. Sorteggia 3 giocatori tra i titolari. Saranno gli unici a giocare questa partita."
     },
     {
+        "id": 13,
+        "title": "Spazio ai Giovani",
+        "description": "Un giocatore della Primavera subito titolare per 45 Minuti"
+    },
+    {
         "id": 21,
         "title": "Nessun imprevisto",
         "description": ""

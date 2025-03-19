@@ -1,21 +1,11 @@
 import { Link } from "react-router-dom";
 import ingaggio from "../data/ingaggio.json";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 import { HiOutlineCubeTransparent } from "react-icons/hi2";
-import { TiDeleteOutline } from "react-icons/ti";
 
 function Ingaggio() {
   const [ingaggioData, setIngaggioData] = useState(null);
-  const [listaTesti, setListaTesti] = useState([]);
-  const [inputTesto, setInputTesto] = useState("");
-
-  useEffect(()=> {
-    const datiSalvati = localStorage.getItem("listaTesti");
-    if (datiSalvati) {
-      setListaTesti(JSON.parse(datiSalvati));
-    }
-  },[]);
   
 
   const handleCLick = () => {
@@ -32,21 +22,6 @@ function Ingaggio() {
 
     }
 
-    const aggiungiTesto = () => {
-        if(inputTesto !== "") {
-          const nuovaLista = [...listaTesti, inputTesto];
-          setListaTesti(nuovaLista);
-          localStorage.setItem('listaTesti', JSON.stringify(nuovaLista));
-          setInputTesto("");
-        }
-    };
-
-    const handleDelete = (testoCanc) => {
-      const upList = listaTesti.filter(testo => testo !== testoCanc);
-      setListaTesti(upList);
-      localStorage.setItem("listaTesti", JSON.stringify(upList));
-    };
-
   return (
     <div>
       <div className="border-2 border-sky-800 rounded-2xl m-8 bg-sky-950">
@@ -58,70 +33,9 @@ function Ingaggio() {
 
               { ingaggioData && (
                 <div className="mt-24 p-4 text-center text-emerald-500">
-                  <h2 className="text-4xl font-bold uppercase">
+                  <h2 className="text-5xl font-bold uppercase">
                     {ingaggioData.title}
                   </h2>
-
-                  <div className="mt-24 flex justify-items-center justify-center items-center">
-                    <input 
-                      type="text"
-                      value={inputTesto}
-                      onChange={(e) => setInputTesto(e.target.value)}
-                      className="text-lg custom-input px-4 py-2 rounded-lg 
-                                shadow-sm transition duration-300 ease-in-out transform 
-                                bg-sky-800 text-white mr-2 md:mr-4 lg:mr-6 xl:mr-8"
-                    />
-                    <button 
-                      onClick={aggiungiTesto}
-                      className="group cursor-pointer outline-none 
-                                hover:rotate-90 duration-300"
-                      title="Add New"
-                    >  
-                      <svg
-                        className="stroke-emerald-500 fill-none group-hover:fill-emerald-800 
-                                  group-active:stroke-emerald-200 group-active:fill-emerald-600 
-                                  group-active:duration-0 duration-300"
-                        viewBox="0 0 24 24"
-                        height="50px"
-                        width="50px"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          stroke-width="1.5"
-                          d="M12 22C17.5 22 22 17.5 22 12C22 6.5 17.5 2 12 2C6.5 2 2 6.5 2 12C2 17.5 6.5 22 12 22Z"
-                        ></path>
-                        <path stroke-width="1.5" d="M8 12H16"></path>
-                        <path stroke-width="1.5" d="M12 16V8"></path>
-                      </svg>
-                    </button>
-                  </div>
-
-                  <div class="bg-gray-800 text-white max-w-md mx-auto rounded-xl shadow-md overflow-hidden md:max-w-2xl m-5 hover:shadow-2xl transition-all duration-500 ease-in-out">
-                  <div class="md:flex">
-                    <div class="p-8">
-                      <ul>
-                        {listaTesti.map((testo,index) => (
-                        <>
-                        <div className="flex">
-                          <p className="mr-2"> - </p>
-                          <li 
-                            key={index}
-                            className="block mt-1 text-lg leading-tight font-medium text-white"
-                          > {testo} </li> 
-                          <button
-                            onClick={() => handleDelete(testo)}
-                            className="ml-4 cursor-pointer text-red-600 hover:text-red-500"
-                          >
-                            <TiDeleteOutline size={24}/>
-                          </button>
-                        </div>
-                        </>
-                        ))}
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-
 
                 </div> 
               )}
