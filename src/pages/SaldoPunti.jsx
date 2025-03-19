@@ -165,11 +165,8 @@ function SaldoPunti() {
                     />
                     <div 
                         className="w-11 h-6 bg-gray-600 rounded-full 
-                                  peer-checked:after:translate-x-2.5 xl:peer-checked:after:translate-x-full 
-                                  lg:peer-checked:after:translate-x-full md:peer-checked:after:translate-x-full
-                                  sm:peer-checked:after:translate-x-full sm:after:top-0.5
+                                  peer-checked:after:translate-x-full after:top-0.5
                                   peer-checked:after:border-white after:content-[''] after:absolute
-                                  xl:after:top-0.5 lg:after:top-0.5 md:after:top-0.5 after:top-2.5
                                   after:left-[2px] after:bg-white after:border-gray-300 
                                   after:rounded-full after:h-5 after:w-5 after:transition-all 
                                   peer-checked:bg-green-600"
@@ -192,11 +189,8 @@ function SaldoPunti() {
                     />
                     <div 
                         className="w-11 h-6 bg-gray-600 rounded-full 
-                                  peer-checked:after:translate-x-2.5 xl:peer-checked:after:translate-x-full 
-                                  lg:peer-checked:after:translate-x-full md:peer-checked:after:translate-x-full
-                                  sm:peer-checked:after:translate-x-full sm:after:top-0.5
+                                  peer-checked:after:translate-x-full after:top-0.5
                                   peer-checked:after:border-white after:content-[''] after:absolute
-                                  xl:after:top-0.5 lg:after:top-0.5 md:after:top-0.5 after:top-2.5
                                   after:left-[2px] after:bg-white after:border-gray-300 
                                   after:rounded-full after:h-5 after:w-5 after:transition-all 
                                   peer-checked:bg-green-600"

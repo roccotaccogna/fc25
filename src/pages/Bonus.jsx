@@ -43,7 +43,7 @@ function Bonus() {
 
             {/* Blocco bonus */}
             <div className="flex justify-center items-center text-center mt-12 text-teal-500 gap-4">
-                <h2 className="text-6xl font-bold uppercase">
+                <h2 className="ml-5 text-6xl font-bold uppercase">
                     {bonus} 
                 </h2>
                 <h2 className="text-4xl font-bold uppercase">
@@ -61,9 +61,50 @@ function Bonus() {
             )}
     
 
-    { /* TORNA INDIETRO */}
-            <div className="flex justify-between items-center">
-              <div className="mb-24 mt-24 ml-4">
+    
+            <div 
+              className="grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-3 
+                         md:grid-cols-3 place-items-center"
+            >
+
+              { /* BOTTONI RESET E AGGIUNGI */}
+                <div className="mt-8">
+                  <button className="mr-6 rounded-full p-4 hover:bg-teal-700"
+                          onClick={handleCLick}
+                          disabled={bonus === 0}
+                          data-tooltip-content="Aggiungi"
+                          data-tooltip-id="aggiungi-tooltip"
+                          data-tooltip-place="top"
+                  >
+                    <IoIosAdd size={52}/>
+                  </button>
+
+                  <Tooltip 
+                      id="aggiungi-tooltip" 
+                      effect="solid" 
+                  />
+                </div>
+
+                <div className="mt-8">
+                  <button
+                      className="mr-6 rounded-full p-4 hover:bg-teal-700"
+                      onClick={handleReset}
+                      data-tooltip-content="Resetta"
+                      data-tooltip-id="reset-tooltip"
+                      data-tooltip-place="top"
+                  >
+                      
+                      <RiResetLeftFill size={52}/>
+                  </button>
+
+                  <Tooltip 
+                      id="reset-tooltip" 
+                      effect="solid" 
+                  />
+                </div>
+
+              { /* TORNA INDIETRO */}
+                <div className="mb-20 mt-8 md:pt-20 xl:row-start-1 lg:row-start-1 md:row-start-1">
                 <Link to="/">
                   <button
                     className="bg-teal-700 text-center w-48 rounded-2xl h-14 relative text-black 
@@ -94,38 +135,7 @@ function Bonus() {
                     <p className="translate-x-2 text-white font-light">Torna indietro</p>
                   </button>
                 </Link>
-              </div>
-    
-              { /* BOTTONI RESET E AGGIUNGI */}
-                <button className="mr-6 rounded-full p-4 hover:bg-teal-700"
-                        onClick={handleCLick}
-                        disabled={bonus === 0}
-                        data-tooltip-content="Aggiungi"
-                        data-tooltip-id="aggiungi-tooltip"
-                        data-tooltip-place="top"
-                >
-                  <IoIosAdd size={52}/>
-                </button>
-
-                <button
-                    className="mr-6 rounded-full p-4 hover:bg-teal-700"
-                    onClick={handleReset}
-                    data-tooltip-content="Resetta"
-                    data-tooltip-id="reset-tooltip"
-                    data-tooltip-place="top"
-                >
-                    
-                    <RiResetLeftFill size={52}/>
-                </button>
-
-                <Tooltip 
-                    id="reset-tooltip" 
-                    effect="solid" 
-                />
-                <Tooltip 
-                    id="aggiungi-tooltip" 
-                    effect="solid" 
-                />
+                </div>
 
             </div>
     </div>
