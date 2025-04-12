@@ -8,6 +8,7 @@ import { CgAirplane } from "react-icons/cg";
 import { MdOutlineEuroSymbol } from "react-icons/md";
 import { CgAlignBottom } from "react-icons/cg";
 import { PiListPlusBold } from "react-icons/pi";
+import { GiCommercialAirplane } from "react-icons/gi";
 
 function Homepage() {
   return (
@@ -22,6 +23,8 @@ function Homepage() {
           </div>
     
           <div className="mt-8 gap-12 grid grid-cols-3">
+            
+            {/* PREPARTITA */}
             <div 
               className="border-1 rounded-xl p-4 cursor-pointer 
                          mr-4 ml-4 bg-sky-950 hover:bg-sky-900"
@@ -37,6 +40,7 @@ function Homepage() {
              </Link>        
             </div>
     
+            {/* SETTIMANALE */}
             <div 
               className="border-1 rounded-xl p-4 cursor-pointer 
                          mr-4 bg-sky-950 hover:bg-sky-900"
@@ -51,6 +55,7 @@ function Homepage() {
               </Link>
             </div>
     
+            {/* SERIE NEGATIVA */}
             <div 
               className="border-1 rounded-xl p-4 cursor-pointer 
                          mr-4 bg-sky-950 hover:bg-sky-900"
@@ -65,13 +70,14 @@ function Homepage() {
              </Link>  
             </div>
     
+            {/* INGAGGIO */}
             <div 
               className="border-1 rounded-xl p-4 cursor-pointer 
                          mr-4 ml-4 bg-sky-950 hover:bg-sky-900"
             >        
              <Link to="/ingaggio">  
               <div className="flex flex-col items-center justify-center h-32">
-                <CgAirplane size={52} className="mb-2"/>
+                <GiCommercialAirplane size={52} className="mb-2"/>
                 <button>
                   Ingaggio
                 </button>
@@ -79,6 +85,7 @@ function Homepage() {
              </Link> 
             </div>
     
+            {/* MERCATO */}
             <div 
               className="border-1 rounded-xl p-4 cursor-pointer 
                          mr-4 bg-sky-950 hover:bg-sky-900"
@@ -93,6 +100,7 @@ function Homepage() {
              </Link> 
             </div>
     
+            {/* SALDO PUNTI */}
             <div 
               className="border-1 rounded-xl p-4 cursor-pointer 
                          mr-4 bg-sky-950 hover:bg-sky-900"
@@ -107,6 +115,7 @@ function Homepage() {
              </Link>  
             </div>
 
+            {/* BONUS */}
             <div 
               className="border-1 rounded-xl p-4 cursor-pointer 
                          mr-4 ml-4 bg-teal-900 hover:bg-teal-800"

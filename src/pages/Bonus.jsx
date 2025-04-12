@@ -42,11 +42,11 @@ function Bonus() {
     </div>
 
             {/* Blocco bonus */}
-            <div className="flex justify-center items-center text-center mt-12 text-teal-500 gap-4">
-                <h2 className="ml-5 text-6xl font-bold uppercase">
+            <div className="flex-row justify-center items-center text-center mt-12 text-teal-500 gap-4">
+                <h2 className="mb-5 text-7xl font-bold uppercase">
                     {bonus} 
                 </h2>
-                <h2 className="text-4xl font-bold uppercase">
+                <h2 className="text-3xl font-bold uppercase">
                     Bonus rimanenti
                 </h2>
             </div>  

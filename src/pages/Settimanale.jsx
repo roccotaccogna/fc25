@@ -7,7 +7,6 @@ import { IoShirtOutline } from "react-icons/io5";
 
 function Settimanale() {
   const [settimanaleData, setSettimanaleData] = useState(null);
-  const [randomNumber, setRandomNumber] = useState(null);
 
   const handleCLick = () => {
       // Genera numero casuale tra 1 e 15
@@ -21,9 +20,6 @@ function Settimanale() {
       const fallbackData = settimanale.find(item => item.id === 21);
 
       setSettimanaleData(foundData || fallbackData);
-
-      const randomNum = Math.floor(Math.random() * 32) + 1;
-      setRandomNumber(randomNum);
   }
 
   return (
@@ -31,7 +27,7 @@ function Settimanale() {
     <div className="border-2 border-sky-800 rounded-2xl m-8 bg-sky-950">
         <div className="flex justify-center items-center">
           <h1 className="text-3xl md:text-6xl lg:text-6xl xl:text-6xl mt-26 italic">
-            Peggiori della Settimana...
+            Peggiore della Settimana...
           </h1>
         </div>
 
@@ -44,21 +40,7 @@ function Settimanale() {
                   <p className="mt-20 text-xl italic ">
                     {settimanaleData.description}
                   </p>
-              </div> 
-              
-                  {settimanaleData?.id != 21 && (
-                                        <div className="mt-8 flex justify-center items-center">
-                                        <div className="relative">
-                                          <IoShirtOutline size={124} className="text-emerald-500" />
-                                          <span className="absolute inset-0 flex items-center justify-center 
-                                                           text-5xl font-bold text-white"
-                                                style={{ top: '50%', left: '50%', transform: 'translate(-50%, -50%)' }}
-                                          >
-                                            {randomNumber}
-                                          </span>
-                                        </div>
-                                      </div>
-                  )}
+              </div>             
           </>
           )}
 
